@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C348F5DE18D7527C00D61751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5DD18D7527C00D61751 /* Foundation.framework */; };
+		C348F5E018D7527C00D61751 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5DF18D7527C00D61751 /* CoreGraphics.framework */; };
+		C348F5E218D7527C00D61751 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5E118D7527C00D61751 /* UIKit.framework */; };
+		C348F5E818D7527C00D61751 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C348F5E618D7527C00D61751 /* InfoPlist.strings */; };
+		C348F5EA18D7527C00D61751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F5E918D7527C00D61751 /* main.m */; };
+		C348F5EE18D7527C00D61751 /* DUNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F5ED18D7527C00D61751 /* DUNAppDelegate.m */; };
+		C348F5F118D7527C00D61751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C348F5EF18D7527C00D61751 /* Main.storyboard */; };
+		C348F5F418D7527C00D61751 /* DUNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F5F318D7527C00D61751 /* DUNViewController.m */; };
+		C348F5F618D7527C00D61751 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C348F5F518D7527C00D61751 /* Images.xcassets */; };
+		C348F5FD18D7527D00D61751 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5FC18D7527D00D61751 /* XCTest.framework */; };
+		C348F5FE18D7527D00D61751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5DD18D7527C00D61751 /* Foundation.framework */; };
+		C348F5FF18D7527D00D61751 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5E118D7527C00D61751 /* UIKit.framework */; };
+		C348F60718D7527D00D61751 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C348F60518D7527D00D61751 /* InfoPlist.strings */; };
+		C348F60918D7527D00D61751 /* dunno_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F60818D7527D00D61751 /* dunno_ipadTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C348F60018D7527D00D61751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C348F5D218D7527C00D61751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C348F5D918D7527C00D61751;
+			remoteInfo = "dunno-ipad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C348F5DA18D7527C00D61751 /* dunno-ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dunno-ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C348F5DD18D7527C00D61751 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C348F5DF18D7527C00D61751 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C348F5E118D7527C00D61751 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C348F5E518D7527C00D61751 /* dunno-ipad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dunno-ipad-Info.plist"; sourceTree = "<group>"; };
+		C348F5E718D7527C00D61751 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C348F5E918D7527C00D61751 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C348F5EB18D7527C00D61751 /* dunno-ipad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dunno-ipad-Prefix.pch"; sourceTree = "<group>"; };
+		C348F5EC18D7527C00D61751 /* DUNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DUNAppDelegate.h; sourceTree = "<group>"; };
+		C348F5ED18D7527C00D61751 /* DUNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DUNAppDelegate.m; sourceTree = "<group>"; };
+		C348F5F018D7527C00D61751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C348F5F218D7527C00D61751 /* DUNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DUNViewController.h; sourceTree = "<group>"; };
+		C348F5F318D7527C00D61751 /* DUNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DUNViewController.m; sourceTree = "<group>"; };
+		C348F5F518D7527C00D61751 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C348F5FB18D7527D00D61751 /* dunno-ipadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dunno-ipadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C348F5FC18D7527D00D61751 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C348F60418D7527D00D61751 /* dunno-ipadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dunno-ipadTests-Info.plist"; sourceTree = "<group>"; };
+		C348F60618D7527D00D61751 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C348F60818D7527D00D61751 /* dunno_ipadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dunno_ipadTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C348F5D718D7527C00D61751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348F5E018D7527C00D61751 /* CoreGraphics.framework in Frameworks */,
+				C348F5E218D7527C00D61751 /* UIKit.framework in Frameworks */,
+				C348F5DE18D7527C00D61751 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348F5F818D7527D00D61751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348F5FD18D7527D00D61751 /* XCTest.framework in Frameworks */,
+				C348F5FF18D7527D00D61751 /* UIKit.framework in Frameworks */,
+				C348F5FE18D7527D00D61751 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C348F5D118D7527C00D61751 = {
+			isa = PBXGroup;
+			children = (
+				C348F5E318D7527C00D61751 /* dunno-ipad */,
+				C348F60218D7527D00D61751 /* dunno-ipadTests */,
+				C348F5DC18D7527C00D61751 /* Frameworks */,
+				C348F5DB18D7527C00D61751 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C348F5DB18D7527C00D61751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C348F5DA18D7527C00D61751 /* dunno-ipad.app */,
+				C348F5FB18D7527D00D61751 /* dunno-ipadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C348F5DC18D7527C00D61751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C348F5DD18D7527C00D61751 /* Foundation.framework */,
+				C348F5DF18D7527C00D61751 /* CoreGraphics.framework */,
+				C348F5E118D7527C00D61751 /* UIKit.framework */,
+				C348F5FC18D7527D00D61751 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C348F5E318D7527C00D61751 /* dunno-ipad */ = {
+			isa = PBXGroup;
+			children = (
+				C348F5EC18D7527C00D61751 /* DUNAppDelegate.h */,
+				C348F5ED18D7527C00D61751 /* DUNAppDelegate.m */,
+				C348F5EF18D7527C00D61751 /* Main.storyboard */,
+				C348F5F218D7527C00D61751 /* DUNViewController.h */,
+				C348F5F318D7527C00D61751 /* DUNViewController.m */,
+				C348F5F518D7527C00D61751 /* Images.xcassets */,
+				C348F5E418D7527C00D61751 /* Supporting Files */,
+			);
+			path = "dunno-ipad";
+			sourceTree = "<group>";
+		};
+		C348F5E418D7527C00D61751 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C348F5E518D7527C00D61751 /* dunno-ipad-Info.plist */,
+				C348F5E618D7527C00D61751 /* InfoPlist.strings */,
+				C348F5E918D7527C00D61751 /* main.m */,
+				C348F5EB18D7527C00D61751 /* dunno-ipad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C348F60218D7527D00D61751 /* dunno-ipadTests */ = {
+			isa = PBXGroup;
+			children = (
+				C348F60818D7527D00D61751 /* dunno_ipadTests.m */,
+				C348F60318D7527D00D61751 /* Supporting Files */,
+			);
+			path = "dunno-ipadTests";
+			sourceTree = "<group>";
+		};
+		C348F60318D7527D00D61751 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C348F60418D7527D00D61751 /* dunno-ipadTests-Info.plist */,
+				C348F60518D7527D00D61751 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C348F5D918D7527C00D61751 /* dunno-ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C348F60C18D7527D00D61751 /* Build configuration list for PBXNativeTarget "dunno-ipad" */;
+			buildPhases = (
+				C348F5D618D7527C00D61751 /* Sources */,
+				C348F5D718D7527C00D61751 /* Frameworks */,
+				C348F5D818D7527C00D61751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dunno-ipad";
+			productName = "dunno-ipad";
+			productReference = C348F5DA18D7527C00D61751 /* dunno-ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C348F5FA18D7527D00D61751 /* dunno-ipadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C348F60F18D7527D00D61751 /* Build configuration list for PBXNativeTarget "dunno-ipadTests" */;
+			buildPhases = (
+				C348F5F718D7527D00D61751 /* Sources */,
+				C348F5F818D7527D00D61751 /* Frameworks */,
+				C348F5F918D7527D00D61751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C348F60118D7527D00D61751 /* PBXTargetDependency */,
+			);
+			name = "dunno-ipadTests";
+			productName = "dunno-ipadTests";
+			productReference = C348F5FB18D7527D00D61751 /* dunno-ipadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C348F5D218D7527C00D61751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DUN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = dunno;
+				TargetAttributes = {
+					C348F5FA18D7527D00D61751 = {
+						TestTargetID = C348F5D918D7527C00D61751;
+					};
+				};
+			};
+			buildConfigurationList = C348F5D518D7527C00D61751 /* Build configuration list for PBXProject "dunno-ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C348F5D118D7527C00D61751;
+			productRefGroup = C348F5DB18D7527C00D61751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C348F5D918D7527C00D61751 /* dunno-ipad */,
+				C348F5FA18D7527D00D61751 /* dunno-ipadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C348F5D818D7527C00D61751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348F5F618D7527C00D61751 /* Images.xcassets in Resources */,
+				C348F5E818D7527C00D61751 /* InfoPlist.strings in Resources */,
+				C348F5F118D7527C00D61751 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348F5F918D7527D00D61751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348F60718D7527D00D61751 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C348F5D618D7527C00D61751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348F5F418D7527C00D61751 /* DUNViewController.m in Sources */,
+				C348F5EE18D7527C00D61751 /* DUNAppDelegate.m in Sources */,
+				C348F5EA18D7527C00D61751 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C348F5F718D7527D00D61751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C348F60918D7527D00D61751 /* dunno_ipadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C348F60118D7527D00D61751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C348F5D918D7527C00D61751 /* dunno-ipad */;
+			targetProxy = C348F60018D7527D00D61751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C348F5E618D7527C00D61751 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C348F5E718D7527C00D61751 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C348F5EF18D7527C00D61751 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C348F5F018D7527C00D61751 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C348F60518D7527D00D61751 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C348F60618D7527D00D61751 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C348F60A18D7527D00D61751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C348F60B18D7527D00D61751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C348F60D18D7527D00D61751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dunno-ipad/dunno-ipad-Prefix.pch";
+				INFOPLIST_FILE = "dunno-ipad/dunno-ipad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C348F60E18D7527D00D61751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dunno-ipad/dunno-ipad-Prefix.pch";
+				INFOPLIST_FILE = "dunno-ipad/dunno-ipad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C348F61018D7527D00D61751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/dunno-ipad.app/dunno-ipad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dunno-ipad/dunno-ipad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dunno-ipadTests/dunno-ipadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C348F61118D7527D00D61751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/dunno-ipad.app/dunno-ipad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dunno-ipad/dunno-ipad-Prefix.pch";
+				INFOPLIST_FILE = "dunno-ipadTests/dunno-ipadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C348F5D518D7527C00D61751 /* Build configuration list for PBXProject "dunno-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C348F60A18D7527D00D61751 /* Debug */,
+				C348F60B18D7527D00D61751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C348F60C18D7527D00D61751 /* Build configuration list for PBXNativeTarget "dunno-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C348F60D18D7527D00D61751 /* Debug */,
+				C348F60E18D7527D00D61751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C348F60F18D7527D00D61751 /* Build configuration list for PBXNativeTarget "dunno-ipadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C348F61018D7527D00D61751 /* Debug */,
+				C348F61118D7527D00D61751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C348F5D218D7527C00D61751 /* Project object */;
+}
