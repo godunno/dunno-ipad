@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C307600418E06548009B644E /* DUNLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C307600218E06548009B644E /* DUNLoginVC.m */; };
 		C348F5DE18D7527C00D61751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5DD18D7527C00D61751 /* Foundation.framework */; };
 		C348F5E018D7527C00D61751 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5DF18D7527C00D61751 /* CoreGraphics.framework */; };
 		C348F5E218D7527C00D61751 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5E118D7527C00D61751 /* UIKit.framework */; };
@@ -14,13 +15,14 @@
 		C348F5EA18D7527C00D61751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F5E918D7527C00D61751 /* main.m */; };
 		C348F5EE18D7527C00D61751 /* DUNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F5ED18D7527C00D61751 /* DUNAppDelegate.m */; };
 		C348F5F118D7527C00D61751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C348F5EF18D7527C00D61751 /* Main.storyboard */; };
-		C348F5F418D7527C00D61751 /* DUNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F5F318D7527C00D61751 /* DUNViewController.m */; };
 		C348F5F618D7527C00D61751 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C348F5F518D7527C00D61751 /* Images.xcassets */; };
 		C348F5FD18D7527D00D61751 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5FC18D7527D00D61751 /* XCTest.framework */; };
 		C348F5FE18D7527D00D61751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5DD18D7527C00D61751 /* Foundation.framework */; };
 		C348F5FF18D7527D00D61751 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C348F5E118D7527C00D61751 /* UIKit.framework */; };
 		C348F60718D7527D00D61751 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C348F60518D7527D00D61751 /* InfoPlist.strings */; };
 		C348F60918D7527D00D61751 /* dunno_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F60818D7527D00D61751 /* dunno_ipadTests.m */; };
+		C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE5D18E37308004C5695 /* DUNSession.m */; };
+		C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6018E373E4004C5695 /* DUNHomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C307600118E06548009B644E /* DUNLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNLoginVC.h; sourceTree = "<group>"; };
+		C307600218E06548009B644E /* DUNLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNLoginVC.m; sourceTree = "<group>"; };
 		C348F5DA18D7527C00D61751 /* dunno-ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dunno-ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C348F5DD18D7527C00D61751 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C348F5DF18D7527C00D61751 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +49,16 @@
 		C348F5EC18D7527C00D61751 /* DUNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DUNAppDelegate.h; sourceTree = "<group>"; };
 		C348F5ED18D7527C00D61751 /* DUNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DUNAppDelegate.m; sourceTree = "<group>"; };
 		C348F5F018D7527C00D61751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C348F5F218D7527C00D61751 /* DUNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DUNViewController.h; sourceTree = "<group>"; };
-		C348F5F318D7527C00D61751 /* DUNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DUNViewController.m; sourceTree = "<group>"; };
 		C348F5F518D7527C00D61751 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C348F5FB18D7527D00D61751 /* dunno-ipadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dunno-ipadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C348F5FC18D7527D00D61751 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C348F60418D7527D00D61751 /* dunno-ipadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dunno-ipadTests-Info.plist"; sourceTree = "<group>"; };
 		C348F60618D7527D00D61751 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C348F60818D7527D00D61751 /* dunno_ipadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dunno_ipadTests.m; sourceTree = "<group>"; };
+		C37ABE5C18E37308004C5695 /* DUNSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNSession.h; sourceTree = "<group>"; };
+		C37ABE5D18E37308004C5695 /* DUNSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNSession.m; sourceTree = "<group>"; };
+		C37ABE5F18E373E4004C5695 /* DUNHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNHomeVC.h; sourceTree = "<group>"; };
+		C37ABE6018E373E4004C5695 /* DUNHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNHomeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3075FFB18E06527009B644E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3075FFE18E06547009B644E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C307600118E06548009B644E /* DUNLoginVC.h */,
+				C307600218E06548009B644E /* DUNLoginVC.m */,
+				C37ABE5F18E373E4004C5695 /* DUNHomeVC.h */,
+				C37ABE6018E373E4004C5695 /* DUNHomeVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C348F5D118D7527C00D61751 = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +136,10 @@
 		C348F5E318D7527C00D61751 /* dunno-ipad */ = {
 			isa = PBXGroup;
 			children = (
-				C348F5EC18D7527C00D61751 /* DUNAppDelegate.h */,
-				C348F5ED18D7527C00D61751 /* DUNAppDelegate.m */,
+				C37ABE5B18E372EB004C5695 /* Components */,
+				C3075FFE18E06547009B644E /* Controllers */,
+				C3075FFB18E06527009B644E /* Views */,
 				C348F5EF18D7527C00D61751 /* Main.storyboard */,
-				C348F5F218D7527C00D61751 /* DUNViewController.h */,
-				C348F5F318D7527C00D61751 /* DUNViewController.m */,
 				C348F5F518D7527C00D61751 /* Images.xcassets */,
 				C348F5E418D7527C00D61751 /* Supporting Files */,
 			);
@@ -126,6 +149,8 @@
 		C348F5E418D7527C00D61751 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C348F5EC18D7527C00D61751 /* DUNAppDelegate.h */,
+				C348F5ED18D7527C00D61751 /* DUNAppDelegate.m */,
 				C348F5E518D7527C00D61751 /* dunno-ipad-Info.plist */,
 				C348F5E618D7527C00D61751 /* InfoPlist.strings */,
 				C348F5E918D7527C00D61751 /* main.m */,
@@ -150,6 +175,15 @@
 				C348F60518D7527D00D61751 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C37ABE5B18E372EB004C5695 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C37ABE5C18E37308004C5695 /* DUNSession.h */,
+				C37ABE5D18E37308004C5695 /* DUNSession.m */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C348F5F418D7527C00D61751 /* DUNViewController.m in Sources */,
+				C307600418E06548009B644E /* DUNLoginVC.m in Sources */,
 				C348F5EE18D7527C00D61751 /* DUNAppDelegate.m in Sources */,
+				C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */,
 				C348F5EA18D7527C00D61751 /* main.m in Sources */,
+				C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +495,7 @@
 				C348F60E18D7527D00D61751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C348F60F18D7527D00D61751 /* Build configuration list for PBXNativeTarget "dunno-ipadTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +504,7 @@
 				C348F61118D7527D00D61751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

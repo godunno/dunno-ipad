@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8B5064DF-4095-46A4-9AA9-2CA4B86DF435</string>
+	<key>IDESourceControlProjectName</key>
+	<string>dunno-ipad</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F50A9567-5273-41E5-9C1B-869CB87448B4</key>
+		<string>ssh://github.com/godunno/dunno-ipad.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>dunno-ipad.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F50A9567-5273-41E5-9C1B-869CB87448B4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/godunno/dunno-ipad.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F50A9567-5273-41E5-9C1B-869CB87448B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F50A9567-5273-41E5-9C1B-869CB87448B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dunno-ipad</string>
+		</dict>
+	</array>
+</dict>
+</plist>
