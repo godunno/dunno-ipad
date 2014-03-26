@@ -23,6 +23,7 @@
 		C348F60918D7527D00D61751 /* dunno_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C348F60818D7527D00D61751 /* dunno_ipadTests.m */; };
 		C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE5D18E37308004C5695 /* DUNSession.m */; };
 		C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6018E373E4004C5695 /* DUNHomeVC.m */; };
+		C37ABE6F18E3793D004C5695 /* DUNEventInteractionsCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6E18E3793D004C5695 /* DUNEventInteractionsCVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		C37ABE5D18E37308004C5695 /* DUNSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNSession.m; sourceTree = "<group>"; };
 		C37ABE5F18E373E4004C5695 /* DUNHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNHomeVC.h; sourceTree = "<group>"; };
 		C37ABE6018E373E4004C5695 /* DUNHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNHomeVC.m; sourceTree = "<group>"; };
+		C37ABE6D18E3793D004C5695 /* DUNEventInteractionsCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEventInteractionsCVC.h; sourceTree = "<group>"; };
+		C37ABE6E18E3793D004C5695 /* DUNEventInteractionsCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventInteractionsCVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				C307600218E06548009B644E /* DUNLoginVC.m */,
 				C37ABE5F18E373E4004C5695 /* DUNHomeVC.h */,
 				C37ABE6018E373E4004C5695 /* DUNHomeVC.m */,
+				C37ABE6D18E3793D004C5695 /* DUNEventInteractionsCVC.h */,
+				C37ABE6E18E3793D004C5695 /* DUNEventInteractionsCVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37ABE6F18E3793D004C5695 /* DUNEventInteractionsCVC.m in Sources */,
 				C307600418E06548009B644E /* DUNLoginVC.m in Sources */,
 				C348F5EE18D7527C00D61751 /* DUNAppDelegate.m in Sources */,
 				C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */,
