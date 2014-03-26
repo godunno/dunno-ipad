@@ -1,9 +1,11 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, "7.0"
+platform :ios, '7.0'
 
-target "dunno-ipad" do
+inhibit_all_warnings!
 
-end
+xcodeproj 'dunno-ipad'
+
+pod 'dunno-shared', :path => '../dunno-shared'
+#pod 'dunno-shared', :git => "https://github.com/godunno/dunno-shared.git"
 
 target "dunno-ipadTests" do
 
