@@ -2,6 +2,7 @@
 #import "DUNHomeVC.h"
 
 #import "DUNAPI.h"
+#import "DUNSession.h"
 
 @interface DUNLoginVC ()
 @property (nonatomic, weak) IBOutlet UITextField *usernameTextField;
@@ -23,6 +24,8 @@
   NSString *password = _passwordTextField.text;
   
   [[DUNAPI sharedInstance] loginTeacherWithUsername:username andPassword:password success:^(DUNTeacher *teacher) {
+    
+    [DUNSession sharedInstance].currentTeacher = teacher;
     
     DUNHomeVC *homeVC =  [self.storyboard instantiateViewControllerWithIdentifier:kDUNHomeVCStoryboardId];
     [self.splitViewController.viewControllers[1] pushViewController:homeVC animated:YES];

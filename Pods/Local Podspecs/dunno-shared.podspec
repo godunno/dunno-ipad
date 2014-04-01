@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "dunno-shared"
-  s.version      = "1.3"
+  s.version      = "1.3.2"
   s.summary      = 'Common classes to iPad and iPhone module'
   s.homepage     = "https://github.com/godunno/dunno-shared"
   s.license      = 'MIT'
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'dunno-shared/**/*.h'
 
   s.dependency 'JSONModel'
+  s.dependency 'Mantle'  
   s.dependency 'libPusher'
   s.dependency 'Reachability'
 

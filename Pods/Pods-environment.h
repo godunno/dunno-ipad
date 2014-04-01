@@ -54,6 +54,18 @@
 #define COCOAPODS_VERSION_MINOR_JSONModel 12
 #define COCOAPODS_VERSION_PATCH_JSONModel 0
 
+// Mantle
+#define COCOAPODS_POD_AVAILABLE_Mantle
+#define COCOAPODS_VERSION_MAJOR_Mantle 1
+#define COCOAPODS_VERSION_MINOR_Mantle 4
+#define COCOAPODS_VERSION_PATCH_Mantle 1
+
+// Mantle/extobjc
+#define COCOAPODS_POD_AVAILABLE_Mantle_extobjc
+#define COCOAPODS_VERSION_MAJOR_Mantle_extobjc 1
+#define COCOAPODS_VERSION_MINOR_Mantle_extobjc 4
+#define COCOAPODS_VERSION_PATCH_Mantle_extobjc 1
+
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
 #define COCOAPODS_VERSION_MAJOR_Reachability 3
@@ -70,7 +82,7 @@
 #define COCOAPODS_POD_AVAILABLE_dunno_shared
 #define COCOAPODS_VERSION_MAJOR_dunno_shared 1
 #define COCOAPODS_VERSION_MINOR_dunno_shared 3
-#define COCOAPODS_VERSION_PATCH_dunno_shared 0
+#define COCOAPODS_VERSION_PATCH_dunno_shared 2
 
 // libPusher
 #define COCOAPODS_POD_AVAILABLE_libPusher

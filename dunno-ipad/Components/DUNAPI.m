@@ -20,18 +20,22 @@
   NSParameterAssert(username!=nil);
   NSParameterAssert(password!=nil);
   
-  NSDictionary *params = @{@"teacher[email]":username, @"teacher[password]":password};
-  
   NSString *endpoint = [NSString stringWithFormat:@"%@/teachers/sign_in",@"http://localhost:3000/api/v1"];
+  
+  NSDictionary *params = @{@"teacher[email]":username, @"teacher[password]":password};
   
   AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
   [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
   
   [manager POST:endpoint parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-
-    NSLog(@"ok --- %@", responseObject);
     
-    successBlock(nil);
+    NSError *error = nil;
+    DUNTeacher *teacher = [MTLJSONAdapter modelOfClass:DUNTeacher.class fromJSONDictionary:responseObject error:&error];
+     
+    if(!error)
+      successBlock(teacher);
+    else
+      errorBlock(error);
     
   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
     errorBlock(error);
@@ -39,7 +43,7 @@
 }
 
 
-#pragma mark - 
+#pragma mark -
 #pragma mark - Private Methods
 
 
