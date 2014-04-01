@@ -1,5 +1,5 @@
 @interface DUNSession : NSObject
 
-+ (DUNSession*) sharedInstance;
++ (instancetype) sharedInstance;
 
 @end

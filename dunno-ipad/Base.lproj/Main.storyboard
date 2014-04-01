@@ -110,6 +110,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="cP0-AF-607" id="35w-Ux-aWZ"/>
+                        <outlet property="usernameTextField" destination="GmK-Sz-1FY" id="W5t-oE-alz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhD-KL-VJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
