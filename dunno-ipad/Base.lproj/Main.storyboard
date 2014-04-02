@@ -84,7 +84,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DDN-sk-NfB">
                                 <rect key="frame" x="0.0" y="124" width="1024" height="581"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="30" minimumInteritemSpacing="30" id="7UE-Y9-Qce">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="30" minimumInteritemSpacing="30" id="7UE-Y9-Qce">
                                     <size key="itemSize" width="225" height="210"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -128,6 +128,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMA-6e-NtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955" y="-263"/>
+        </scene>
+        <!--Event DashboardVC-->
+        <scene sceneID="nyT-XT-WuG">
+            <objects>
+                <viewController storyboardIdentifier="vc.dunno.ipad.event.dashboardvc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BeU-Ia-6K0" customClass="DUNEventDashboardVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K7Y-6U-zpB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sq8-y9-Rlv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VdZ-AE-cZu">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J4W-83-PUd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2096" y="-263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nYq-Ml-CaN">
