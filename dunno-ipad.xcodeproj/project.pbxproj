@@ -10,6 +10,8 @@
 		1AC9782C79FE4C8EB8954F12 /* libPods-dunno-ipadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF4E4D8154F47A6A758D30F /* libPods-dunno-ipadTests.a */; };
 		3B63C0B2C2064B1D98431EAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B80D7323C2104BB2B200E396 /* libPods.a */; };
 		C307600418E06548009B644E /* DUNLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C307600218E06548009B644E /* DUNLoginVC.m */; };
+		C329C68718EC593100766B14 /* DUNStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C329C68618EC593100766B14 /* DUNStyle.m */; };
+		C329C68D18ECB31900766B14 /* DUNEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C329C68C18ECB31900766B14 /* DUNEventCell.m */; };
 		C32ED00D18EB086D005F1822 /* DUNAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C32ED00C18EB086D005F1822 /* DUNAPI.m */; };
 		C32ED01118EB0A29005F1822 /* DUNAPISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C32ED00F18EB0A29005F1822 /* DUNAPISpec.m */; };
 		C32ED01218EB0A29005F1822 /* DUNSessionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C32ED01018EB0A29005F1822 /* DUNSessionSpec.m */; };
@@ -27,7 +29,6 @@
 		C348F60718D7527D00D61751 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C348F60518D7527D00D61751 /* InfoPlist.strings */; };
 		C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE5D18E37308004C5695 /* DUNSession.m */; };
 		C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6018E373E4004C5695 /* DUNHomeVC.m */; };
-		C37ABE6F18E3793D004C5695 /* DUNEventInteractionsCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6E18E3793D004C5695 /* DUNEventInteractionsCVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,10 @@
 		B80D7323C2104BB2B200E396 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C307600118E06548009B644E /* DUNLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNLoginVC.h; sourceTree = "<group>"; };
 		C307600218E06548009B644E /* DUNLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNLoginVC.m; sourceTree = "<group>"; };
+		C329C68518EC593100766B14 /* DUNStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNStyle.h; sourceTree = "<group>"; };
+		C329C68618EC593100766B14 /* DUNStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNStyle.m; sourceTree = "<group>"; };
+		C329C68B18ECB31900766B14 /* DUNEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEventCell.h; sourceTree = "<group>"; };
+		C329C68C18ECB31900766B14 /* DUNEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventCell.m; sourceTree = "<group>"; };
 		C32ED00B18EB086C005F1822 /* DUNAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNAPI.h; sourceTree = "<group>"; };
 		C32ED00C18EB086D005F1822 /* DUNAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNAPI.m; sourceTree = "<group>"; };
 		C32ED00F18EB0A29005F1822 /* DUNAPISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNAPISpec.m; sourceTree = "<group>"; };
@@ -68,8 +73,6 @@
 		C37ABE5D18E37308004C5695 /* DUNSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNSession.m; sourceTree = "<group>"; };
 		C37ABE5F18E373E4004C5695 /* DUNHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNHomeVC.h; sourceTree = "<group>"; };
 		C37ABE6018E373E4004C5695 /* DUNHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNHomeVC.m; sourceTree = "<group>"; };
-		C37ABE6D18E3793D004C5695 /* DUNEventInteractionsCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEventInteractionsCVC.h; sourceTree = "<group>"; };
-		C37ABE6E18E3793D004C5695 /* DUNEventInteractionsCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventInteractionsCVC.m; sourceTree = "<group>"; };
 		CC8062B1F95E43F0A3C4FA18 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D62293D0E61746128DF0A048 /* Pods-dunno-ipadTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dunno-ipadTests.xcconfig"; path = "Pods/Pods-dunno-ipadTests.xcconfig"; sourceTree = "<group>"; };
 		EEF4E4D8154F47A6A758D30F /* libPods-dunno-ipadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dunno-ipadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +107,8 @@
 		C3075FFB18E06527009B644E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C329C68B18ECB31900766B14 /* DUNEventCell.h */,
+				C329C68C18ECB31900766B14 /* DUNEventCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,8 +120,6 @@
 				C307600218E06548009B644E /* DUNLoginVC.m */,
 				C37ABE5F18E373E4004C5695 /* DUNHomeVC.h */,
 				C37ABE6018E373E4004C5695 /* DUNHomeVC.m */,
-				C37ABE6D18E3793D004C5695 /* DUNEventInteractionsCVC.h */,
-				C37ABE6E18E3793D004C5695 /* DUNEventInteractionsCVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -215,6 +218,8 @@
 				C37ABE5D18E37308004C5695 /* DUNSession.m */,
 				C32ED00B18EB086C005F1822 /* DUNAPI.h */,
 				C32ED00C18EB086D005F1822 /* DUNAPI.m */,
+				C329C68518EC593100766B14 /* DUNStyle.h */,
+				C329C68618EC593100766B14 /* DUNStyle.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -384,11 +389,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C37ABE6F18E3793D004C5695 /* DUNEventInteractionsCVC.m in Sources */,
 				C307600418E06548009B644E /* DUNLoginVC.m in Sources */,
 				C348F5EE18D7527C00D61751 /* DUNAppDelegate.m in Sources */,
+				C329C68D18ECB31900766B14 /* DUNEventCell.m in Sources */,
 				C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */,
 				C32ED00D18EB086D005F1822 /* DUNAPI.m in Sources */,
+				C329C68718EC593100766B14 /* DUNStyle.m in Sources */,
 				C348F5EA18D7527C00D61751 /* main.m in Sources */,
 				C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */,
 			);

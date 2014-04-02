@@ -5,6 +5,8 @@ inhibit_all_warnings!
 xcodeproj 'dunno-ipad'
 
 pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'SDCAlertView'
 
 pod 'dunno-shared', :path => '../dunno-shared'
 #pod 'dunno-shared', :git => "https://github.com/godunno/dunno-shared.git"

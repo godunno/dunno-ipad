@@ -42,9 +42,4 @@
   }];
 }
 
-
-#pragma mark -
-#pragma mark - Private Methods
-
-
 @end

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B9CEE5BDB4314A0E9918B0E6"
+               BlueprintIdentifier = "1DC29FF55BFC454D8339F704"
                BuildableName = "libPods-dunno-ipadTests-OCHamcrest.a"
                BlueprintName = "Pods-dunno-ipadTests-OCHamcrest"
                ReferencedContainer = "container:Pods.xcodeproj">

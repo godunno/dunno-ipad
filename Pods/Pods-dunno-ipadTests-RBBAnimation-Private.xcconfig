@@ -1,0 +1,5 @@
+#include "Pods-dunno-ipadTests-RBBAnimation.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/RBBAnimation" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/Expecta" "${PODS_ROOT}/Headers/ISO8601DateFormatter" "${PODS_ROOT}/Headers/Mantle" "${PODS_ROOT}/Headers/OCHamcrest" "${PODS_ROOT}/Headers/OCMockito" "${PODS_ROOT}/Headers/RBBAnimation" "${PODS_ROOT}/Headers/SDCAlertView" "${PODS_ROOT}/Headers/SDCAutoLayout" "${PODS_ROOT}/Headers/SDWebImage" "${PODS_ROOT}/Headers/SocketRocket" "${PODS_ROOT}/Headers/Specta" "${PODS_ROOT}/Headers/dunno-shared" "${PODS_ROOT}/Headers/libPusher" "${PODS_ROOT}/Headers/libPusher/Pusher"
+OTHER_LDFLAGS = -ObjC ${PODS_DUNNO_IPADTESTS_RBBANIMATION_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}
