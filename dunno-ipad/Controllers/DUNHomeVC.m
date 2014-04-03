@@ -7,6 +7,7 @@
 
 #import "DUNAPI.h"
 #import "DUNSession.h"
+#import "DUNOpenEvent.h"
 
 #import <SDCAlertView/SDCAlertView.h>
 
@@ -59,9 +60,10 @@
   
   [[DUNAPI sharedInstance] openEvent:event success:^(DUNEvent *eventOpened) {
     
-    _session.activeEvent = eventOpened;
-    
-    DUNEventDashboardVC *eventDashboardVC =  [self.storyboard instantiateViewControllerWithIdentifier:kDUNDashboardEventVCStoryboardId];
+    DUNOpenEvent *openEventCommand = [[DUNOpenEvent alloc] initWithEvent:eventOpened];
+    [openEventCommand execute];
+
+    DUNEventDashboardVC *eventDashboardVC = [self.storyboard instantiateViewControllerWithIdentifier:kDUNDashboardEventVCStoryboardId];
     [self.navigationController presentViewController:eventDashboardVC animated:YES completion:nil];
     
   } error:^(NSError *error) {

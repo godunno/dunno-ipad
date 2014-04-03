@@ -13,6 +13,7 @@
 		C329C68718EC593100766B14 /* DUNStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C329C68618EC593100766B14 /* DUNStyle.m */; };
 		C329C68D18ECB31900766B14 /* DUNEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C329C68C18ECB31900766B14 /* DUNEventCell.m */; };
 		C329C69018ECBE0D00766B14 /* DUNEventDashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C329C68F18ECBE0D00766B14 /* DUNEventDashboardVC.m */; };
+		C329C69418ECDCDB00766B14 /* DUNOpenEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C329C69318ECDCDB00766B14 /* DUNOpenEvent.m */; };
 		C32ED00D18EB086D005F1822 /* DUNAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C32ED00C18EB086D005F1822 /* DUNAPI.m */; };
 		C32ED01118EB0A29005F1822 /* DUNAPISpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C32ED00F18EB0A29005F1822 /* DUNAPISpec.m */; };
 		C32ED01218EB0A29005F1822 /* DUNSessionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C32ED01018EB0A29005F1822 /* DUNSessionSpec.m */; };
@@ -52,6 +53,8 @@
 		C329C68C18ECB31900766B14 /* DUNEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventCell.m; sourceTree = "<group>"; };
 		C329C68E18ECBE0D00766B14 /* DUNEventDashboardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEventDashboardVC.h; sourceTree = "<group>"; };
 		C329C68F18ECBE0D00766B14 /* DUNEventDashboardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventDashboardVC.m; sourceTree = "<group>"; };
+		C329C69218ECDCDB00766B14 /* DUNOpenEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNOpenEvent.h; sourceTree = "<group>"; };
+		C329C69318ECDCDB00766B14 /* DUNOpenEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNOpenEvent.m; sourceTree = "<group>"; };
 		C32ED00B18EB086C005F1822 /* DUNAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNAPI.h; sourceTree = "<group>"; };
 		C32ED00C18EB086D005F1822 /* DUNAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNAPI.m; sourceTree = "<group>"; };
 		C32ED00F18EB0A29005F1822 /* DUNAPISpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNAPISpec.m; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		C329C69118ECDC9F00766B14 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C329C69218ECDCDB00766B14 /* DUNOpenEvent.h */,
+				C329C69318ECDCDB00766B14 /* DUNOpenEvent.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C32ED00E18EB0A29005F1822 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,10 +188,11 @@
 			isa = PBXGroup;
 			children = (
 				C37ABE5B18E372EB004C5695 /* Components */,
-				C3075FFE18E06547009B644E /* Controllers */,
 				C3075FFB18E06527009B644E /* Views */,
-				C348F5EF18D7527C00D61751 /* Main.storyboard */,
+				C3075FFE18E06547009B644E /* Controllers */,
+				C329C69118ECDC9F00766B14 /* Services */,
 				C348F5F518D7527C00D61751 /* Images.xcassets */,
+				C348F5EF18D7527C00D61751 /* Main.storyboard */,
 				C348F5E418D7527C00D61751 /* Supporting Files */,
 			);
 			path = "dunno-ipad";
@@ -398,6 +411,7 @@
 				C348F5EE18D7527C00D61751 /* DUNAppDelegate.m in Sources */,
 				C329C68D18ECB31900766B14 /* DUNEventCell.m in Sources */,
 				C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */,
+				C329C69418ECDCDB00766B14 /* DUNOpenEvent.m in Sources */,
 				C32ED00D18EB086D005F1822 /* DUNAPI.m in Sources */,
 				C329C68718EC593100766B14 /* DUNStyle.m in Sources */,
 				C348F5EA18D7527C00D61751 /* main.m in Sources */,
