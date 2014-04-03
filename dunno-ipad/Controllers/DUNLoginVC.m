@@ -28,7 +28,7 @@
     [DUNSession sharedInstance].currentTeacher = teacher;
     
     DUNHomeVC *homeVC =  [self.storyboard instantiateViewControllerWithIdentifier:kDUNHomeVCStoryboardId];
-    [self.navigationController presentViewController:homeVC animated:YES completion:nil];
+    [self.navigationController pushViewController:homeVC animated:YES];
         
   } error:^(NSError *error) {
     

@@ -1,5 +1,4 @@
 #import "DUNHomeVC.h"
-#import "DUNEventDashboardVC.h"
 #import "DUNEventCell.h"
 
 #import "DUNCourse.h"
@@ -8,6 +7,8 @@
 #import "DUNAPI.h"
 #import "DUNSession.h"
 #import "DUNOpenEvent.h"
+
+#import "DUNEventDashboardVC.h"
 
 #import <SDCAlertView/SDCAlertView.h>
 
@@ -57,20 +58,8 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
   DUNEvent *event = [[_session.currentTeacher events] objectAtIndex:indexPath.row];
-  
-  [[DUNAPI sharedInstance] openEvent:event success:^(DUNEvent *eventOpened) {
-    
-    DUNOpenEvent *openEventCommand = [[DUNOpenEvent alloc] initWithEvent:eventOpened];
-    [openEventCommand execute];
 
-    DUNEventDashboardVC *eventDashboardVC = [self.storyboard instantiateViewControllerWithIdentifier:kDUNDashboardEventVCStoryboardId];
-    [self.navigationController presentViewController:eventDashboardVC animated:YES completion:nil];
-    
-  } error:^(NSError *error) {
-    SDCAlertView *alertView = [[SDCAlertView alloc] initWithTitle:@"ERRO" message:@"Problemas tentando abrir o Evento." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alertView show];
-  }];
-  
+  [self open:event];
 }
 
 #pragma mark -
@@ -89,6 +78,23 @@
   cell.eventName.text = event.uuid;
   
   return cell;
+}
+
+#pragma mark -
+#pragma mark - UICollectionViewDataSource
+
+- (void) open:(DUNEvent*)event
+{
+  DUNOpenEvent *openEventCommand = [[DUNOpenEvent alloc] initWithEvent:event];
+  [openEventCommand executeOnSuccess:^(DUNEvent *eventOpened) {
+    
+    DUNEventDashboardVC *eventDashboardVC = [self.storyboard instantiateViewControllerWithIdentifier:kDUNDashboardEventVCStoryboardId];
+    [self.navigationController pushViewController:eventDashboardVC animated:YES];
+    
+  } error:^(NSError *error) {
+    SDCAlertView *alertView = [[SDCAlertView alloc] initWithTitle:@"ERRO" message:@"Problemas tentando abrir o Evento." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
+  }];
 }
 
 @end

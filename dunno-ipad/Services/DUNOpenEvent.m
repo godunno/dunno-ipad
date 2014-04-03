@@ -1,5 +1,5 @@
 #import "DUNOpenEvent.h"
-
+#import "DUNAPI.h"
 #import "DUNSession.h"
 
 @interface DUNOpenEvent()
@@ -19,17 +19,26 @@
   return self;
 }
 
-- (void) execute
+- (void) executeOnSuccess:(void(^)(DUNEvent *eventOpened))successBlock error:(void(^)(NSError *error))errorBlock
 {
   NSParameterAssert(_event!=nil);
   
-  DUNSession *session = [DUNSession sharedInstance];
-  session.activeEvent = _event;
-  
-  //sign all pusher operations.
+  [[DUNAPI sharedInstance] openEvent:_event success:^(DUNEvent *eventOpened) {
 
-  //invalidate
-  _event = nil;
+    DUNSession *session = [DUNSession sharedInstance];
+    session.activeEvent = _event;
+    
+    //sign all pusher operations.
+    
+    //invalidate
+    _event = nil;
+    
+    successBlock(eventOpened);
+    
+  } error:^(NSError *error) {
+    errorBlock(error);
+  }];
+  
 }
 
 @end
