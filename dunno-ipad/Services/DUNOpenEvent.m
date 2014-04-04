@@ -26,7 +26,7 @@
   [[DUNAPI sharedInstance] openEvent:_event success:^(DUNEvent *eventOpened) {
 
     DUNSession *session = [DUNSession sharedInstance];
-    session.activeEvent = _event;
+    session.activeEvent = eventOpened;
     
     //sign all pusher operations.
     

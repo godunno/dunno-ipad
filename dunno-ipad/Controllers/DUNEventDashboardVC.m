@@ -5,6 +5,7 @@
 #import "DUNSession.h"
 
 #import "DUNEvent.h"
+#import "DUNTopic.h"
 #import "DUNPoll.h"
 
 
@@ -70,10 +71,18 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
   DUNTimelineHeader *header = [[NSBundle mainBundle] loadNibNamed:kDUNTimelineHeaderNibName
                                 owner:self
                               options:nil][0];
-  //loop it
-  //header.topicsTextView = _session.activeEvent.topics[0];
   
-  header.topicsTextView.text = @"hop";
+  if(_session.activeEvent.topics.count == 0){ // start point
+     header.topicsTextView.text = @"Evento sem tópico específico - Tema livre";
+  } else {
+    __block NSString *topicsString = @"Tópicos do evento: \n\n";
+    [_session.activeEvent.topics enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+      DUNTopic *topic =(DUNTopic*)_session.activeEvent.topics[idx];
+      topicsString = [topicsString stringByAppendingString:[@"\u2022 " stringByAppendingString:[topic.title stringByAppendingString:@"\n"]]];
+    }];
+    header.topicsTextView.text = topicsString;
+  }
+  
   return header;
 }
 
@@ -133,17 +142,6 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
 
 #pragma mark -
 #pragma mark - Private Methods
-
-- (NSArray*)messages
-{
-  return _session.activeEvent.timeline.messages;
-}
-
-- (int) messagesCount
-{
-  //+1 is a topic cell.
-  return  [[self messages] count] + 1;
-}
 
 
 @end
