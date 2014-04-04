@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E12BC5290C604B3BA6A5D76E"
+               BlueprintIdentifier = "B0E7E481FBCF438492EC9CAD"
                BuildableName = "libPods-dunno-ipadTests-SDWebImage.a"
                BlueprintName = "Pods-dunno-ipadTests-SDWebImage"
                ReferencedContainer = "container:Pods.xcodeproj">
