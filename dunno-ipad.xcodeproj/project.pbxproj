@@ -33,6 +33,8 @@
 		C34CA27418EE316900ABDB89 /* DUNDashboardPollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CA27318EE316900ABDB89 /* DUNDashboardPollCell.m */; };
 		C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE5D18E37308004C5695 /* DUNSession.m */; };
 		C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6018E373E4004C5695 /* DUNHomeVC.m */; };
+		C3D8DD5C18EF4C880019B86C /* DUNTimelineHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8DD5B18EF4C880019B86C /* DUNTimelineHeader.xib */; };
+		C3D8DD5F18EF4E2F0019B86C /* DUNTimelineHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D8DD5E18EF4E2F0019B86C /* DUNTimelineHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,9 @@
 		C37ABE5D18E37308004C5695 /* DUNSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNSession.m; sourceTree = "<group>"; };
 		C37ABE5F18E373E4004C5695 /* DUNHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNHomeVC.h; sourceTree = "<group>"; };
 		C37ABE6018E373E4004C5695 /* DUNHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNHomeVC.m; sourceTree = "<group>"; };
+		C3D8DD5B18EF4C880019B86C /* DUNTimelineHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DUNTimelineHeader.xib; sourceTree = "<group>"; };
+		C3D8DD5D18EF4E2F0019B86C /* DUNTimelineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelineHeader.h; sourceTree = "<group>"; };
+		C3D8DD5E18EF4E2F0019B86C /* DUNTimelineHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelineHeader.m; sourceTree = "<group>"; };
 		CC8062B1F95E43F0A3C4FA18 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D62293D0E61746128DF0A048 /* Pods-dunno-ipadTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dunno-ipadTests.xcconfig"; path = "Pods/Pods-dunno-ipadTests.xcconfig"; sourceTree = "<group>"; };
 		EEF4E4D8154F47A6A758D30F /* libPods-dunno-ipadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dunno-ipadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +124,7 @@
 		C3075FFB18E06527009B644E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C3D8DD5A18EF4C710019B86C /* Timeline */,
 				C329C68B18ECB31900766B14 /* DUNEventCell.h */,
 				C329C68C18ECB31900766B14 /* DUNEventCell.m */,
 				C34CA22618EE112A00ABDB89 /* DUNTimelineMessageCell.h */,
@@ -252,6 +258,16 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		C3D8DD5A18EF4C710019B86C /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8DD5B18EF4C880019B86C /* DUNTimelineHeader.xib */,
+				C3D8DD5D18EF4E2F0019B86C /* DUNTimelineHeader.h */,
+				C3D8DD5E18EF4E2F0019B86C /* DUNTimelineHeader.m */,
+			);
+			name = Timeline;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C348F5F618D7527C00D61751 /* Images.xcassets in Resources */,
+				C3D8DD5C18EF4C880019B86C /* DUNTimelineHeader.xib in Resources */,
 				C348F5E818D7527C00D61751 /* InfoPlist.strings in Resources */,
 				C348F5F118D7527C00D61751 /* Main.storyboard in Resources */,
 			);
@@ -428,6 +445,7 @@
 				C32ED00D18EB086D005F1822 /* DUNAPI.m in Sources */,
 				C329C68718EC593100766B14 /* DUNStyle.m in Sources */,
 				C348F5EA18D7527C00D61751 /* main.m in Sources */,
+				C3D8DD5F18EF4E2F0019B86C /* DUNTimelineHeader.m in Sources */,
 				C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,7 +1,7 @@
 #import "DUNEventDashboardVC.h"
 #import "DUNTimelineMessageCell.h"
 #import "DUNDashboardPollCell.h"
-
+#import "DUNTimelineHeader.h"
 #import "DUNSession.h"
 
 #import "DUNEvent.h"
@@ -9,7 +9,7 @@
 
 
 @interface DUNEventDashboardVC ()<UITableViewDelegate, UITableViewDataSource,
-                                    UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, weak) IBOutlet UITableView *timelineTableView;
 @property (nonatomic, weak) IBOutlet UICollectionView *pollCollectionView;
@@ -25,9 +25,9 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-
+  
   //load and customize interface
-    _session = [DUNSession sharedInstance];
+  _session = [DUNSession sharedInstance];
   
   _timelineTableView.delegate = self;
   _timelineTableView.dataSource = self;
@@ -39,7 +39,7 @@
   
   NSParameterAssert(_session.currentTeacher!=nil);
   NSParameterAssert(_session.activeEvent!=nil);
-
+  
 }
 
 - (IBAction)closeEvent:(id)sender
@@ -54,8 +54,6 @@
   return [_session.activeEvent.timeline.messages count];
 }
 
-#pragma mark -
-#pragma mark - UITableViewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   DUNTimelineMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:kDUNTimelineMessageCell];
@@ -66,6 +64,21 @@
   
   return cell;
 }
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+  DUNTimelineHeader *header = [[NSBundle mainBundle] loadNibNamed:kDUNTimelineHeaderNibName
+                                owner:self
+                              options:nil][0];
+  //loop it
+  //header.topicsTextView = _session.activeEvent.topics[0];
+  
+  header.topicsTextView.text = @"hop";
+  return header;
+}
+
+#pragma mark -
+#pragma mark - UITableViewDelegate
 
 #pragma mark -
 #pragma mark - UICollectionViewDelegateFlowLayout
@@ -116,5 +129,21 @@
   
   return cell;
 }
+
+
+#pragma mark -
+#pragma mark - Private Methods
+
+- (NSArray*)messages
+{
+  return _session.activeEvent.timeline.messages;
+}
+
+- (int) messagesCount
+{
+  //+1 is a topic cell.
+  return  [[self messages] count] + 1;
+}
+
 
 @end
