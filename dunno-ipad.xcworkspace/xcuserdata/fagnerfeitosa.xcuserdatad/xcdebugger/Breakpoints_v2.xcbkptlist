@@ -344,11 +344,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dunno-ipad/Services/DUNOpenEvent.m"
-            timestampString = "418249562.236451"
+            timestampString = "418340160.525623"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "-executeOnSuccess:error:"
             landmarkType = "5">
          </BreakpointContent>
@@ -518,11 +518,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dunno-ipad/Services/DUNOpenEvent.m"
-            timestampString = "418338856.910046"
+            timestampString = "418340138.238096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "-executeOnSuccess:error:"
             landmarkType = "5">
          </BreakpointContent>
@@ -541,6 +541,190 @@
             endingLineNumber = "56"
             landmarkName = "+topicsJSONTransformer"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dunno-ipad/Services/DUNOpenEvent.m"
+            timestampString = "418340176.490578"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "-registerPusherEvents"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DUNOpenEvent registerPusherEvents]"
+                  moduleName = "dunno-ipad"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-ipad/dunno-ipad/Services/DUNOpenEvent.m"
+                  timestampString = "418340183.538926"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "974">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[DUNOpenEvent registerPusherEvents]_block_invoke"
+                  moduleName = "dunno-ipad"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-ipad/dunno-ipad/Services/DUNOpenEvent.m"
+                  timestampString = "418340183.539395"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dunno-ipad/Services/DUNOpenEvent.m"
+            timestampString = "418340178.054448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "-registerPusherEvents"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DUNOpenEvent registerPusherEvents]"
+                  moduleName = "dunno-ipad"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-ipad/dunno-ipad/Services/DUNOpenEvent.m"
+                  timestampString = "418340178.059038"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "1237">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[DUNOpenEvent registerPusherEvents]_block_invoke60"
+                  moduleName = "dunno-ipad"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-ipad/dunno-ipad/Services/DUNOpenEvent.m"
+                  timestampString = "418340178.059542"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dunno-ipad/Services/DUNOpenEvent.m"
+            timestampString = "418340179.032332"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-registerPusherEvents"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DUNOpenEvent registerPusherEvents]"
+                  moduleName = "dunno-ipad"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-ipad/dunno-ipad/Services/DUNOpenEvent.m"
+                  timestampString = "418340183.642817"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "1237">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[DUNOpenEvent registerPusherEvents]_block_invoke60"
+                  moduleName = "dunno-ipad"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-ipad/dunno-ipad/Services/DUNOpenEvent.m"
+                  timestampString = "418340183.643316"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dunno-ipad/Services/DUNOpenEvent.m"
+            timestampString = "418340179.303476"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "-registerPusherEvents"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[DUNOpenEvent registerPusherEvents]_block_invoke"
+                  moduleName = "dunno-ipad"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-ipad/dunno-ipad/Services/DUNOpenEvent.m"
+                  timestampString = "418340179.30815"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "596">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__36-[DUNOpenEvent registerPusherEvents]_block_invoke"
+                  moduleName = "dunno-ipad"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-ipad/dunno-ipad/Services/DUNOpenEvent.m"
+                  timestampString = "418340179.308878"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "650">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
