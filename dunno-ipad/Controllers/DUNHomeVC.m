@@ -30,6 +30,13 @@
   _eventsCollectionView.backgroundColor = [UIColor clearColor];
 }
 
+- (void) viewDidAppear:(BOOL)animated
+{
+  [super viewDidAppear:animated];
+  
+  NSParameterAssert(_session.currentTeacher!=nil);
+}
+
 #pragma mark -
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
@@ -58,8 +65,19 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
   DUNEvent *event = [[_session.currentTeacher events] objectAtIndex:indexPath.row];
-
-  [self open:event];
+  
+  
+  switch (event.status) {
+    case DUNEventAvailable:
+      [self open:event];
+      break;
+    case DUNEventOpened:
+      [self enter:event];
+      break;
+    default:
+      //TODO show message 'event closed' ?
+      break;
+  }
 }
 
 #pragma mark -
@@ -81,15 +99,20 @@
 }
 
 #pragma mark -
-#pragma mark - UICollectionViewDataSource
+#pragma mark - Private Method
+
+- (void) enter:(DUNEvent*)event
+{
+  NSLog(@"only enter");
+}
 
 - (void) open:(DUNEvent*)event
 {
   DUNOpenEvent *openEventCommand = [[DUNOpenEvent alloc] initWithEvent:event];
   [openEventCommand executeOnSuccess:^(DUNEvent *eventOpened) {
     
-    DUNEventDashboardVC *eventDashboardVC = [self.storyboard instantiateViewControllerWithIdentifier:kDUNDashboardEventVCStoryboardId];
-    [self.navigationController pushViewController:eventDashboardVC animated:YES];
+    DUNEventDashboardVC *dashboardVC = [self.storyboard instantiateViewControllerWithIdentifier:kDUNEventDashboardVCStoryboardId];
+    [self.navigationController pushViewController:dashboardVC animated:YES];
     
   } error:^(NSError *error) {
     SDCAlertView *alertView = [[SDCAlertView alloc] initWithTitle:@"ERRO" message:@"Problemas tentando abrir o Evento." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];

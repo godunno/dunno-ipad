@@ -1,4 +1,4 @@
-#define kDUNDashboardEventVCStoryboardId @"vc.dunno.ipad.event.dashboardvc"
+#define kDUNEventDashboardVCStoryboardId @"vc.dunno.ipad.event.dashboardvc"
 
 @interface DUNEventDashboardVC : UIViewController
 

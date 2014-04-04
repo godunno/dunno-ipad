@@ -6,5 +6,9 @@
 
 @implementation DUNEventCell
 
-
+- (void)layoutSubviews
+{
+  [super layoutSubviews];
+  // customize
+}
 @end
