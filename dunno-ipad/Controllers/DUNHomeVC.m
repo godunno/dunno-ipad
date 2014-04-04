@@ -115,7 +115,7 @@
 
 - (void) enter:(DUNEvent*)event
 {
-  NSLog(@"only enter");
+ // do something?
 }
 
 - (void) open:(DUNEvent*)event

@@ -32,6 +32,15 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
   
   _timelineTableView.delegate = self;
   _timelineTableView.dataSource = self;
+  
+  [_session subscribeTimelineChangesObserver:self execute:^(DUNTimeline *timeline) {
+    [_timelineTableView reloadData];
+  }];
+  
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -45,7 +54,7 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
 
 - (IBAction)closeEvent:(id)sender
 {
-  
+  NSLog(@"fire close event.. ");
 }
 
 #pragma mark -
@@ -61,7 +70,7 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
   
   DUNTimelineUserMessage *message = [_session.activeEvent.timeline.messages objectAtIndex:indexPath.row];
   
-  cell.textLabel.text = @"opa";
+  cell.textLabel.text = message.content;
   
   return cell;
 }
@@ -69,11 +78,11 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
   DUNTimelineHeader *header = [[NSBundle mainBundle] loadNibNamed:kDUNTimelineHeaderNibName
-                                owner:self
-                              options:nil][0];
+                                                            owner:self
+                                                          options:nil][0];
   
   if(_session.activeEvent.topics.count == 0){ // start point
-     header.topicsTextView.text = @"Evento sem tópico específico - Tema livre";
+    header.topicsTextView.text = @"Evento sem tópico específico - Tema livre";
   } else {
     __block NSString *topicsString = @"Tópicos do evento: \n\n";
     [_session.activeEvent.topics enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {

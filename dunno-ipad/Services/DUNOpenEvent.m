@@ -35,7 +35,6 @@
     
     [self registerPusherEvents];
     
-    //invalidate
     _event = nil;
     
     successBlock(eventOpened);
@@ -75,6 +74,7 @@
 #endif
     
     [_session.activeEvent.timeline.messages addObject:newMessage];
+    [_session fireTimelineChangeNotification];
   }];
   
   [pusher subscribeToChannelNamed:_event.channelName withEventNamed:_event.upDownVoteMessageEvent handleWithBlock:^(NSDictionary *jsonDictionary) {
@@ -89,6 +89,7 @@
 #endif
     
     [_session.activeEvent.timeline updateMessage:messageVoted];
+    [_session fireTimelineChangeNotification];    
   }];
   
 }
