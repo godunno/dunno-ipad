@@ -93,6 +93,18 @@
   DUNEventCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kDUNEventCellReusableId forIndexPath:indexPath];
   DUNEvent *event = [[_session.currentTeacher events] objectAtIndex:indexPath.row];
   
+  switch (event.status) {
+    case DUNEventAvailable:
+      cell.backgroundColor = [UIColor lightGrayColor];
+      break;
+    case DUNEventOpened:
+      cell.backgroundColor = [UIColor blueColor];
+      break;
+    default:
+      cell.backgroundColor = [UIColor redColor];
+      break;
+  }
+  
   cell.eventName.text = event.uuid;
   
   return cell;
