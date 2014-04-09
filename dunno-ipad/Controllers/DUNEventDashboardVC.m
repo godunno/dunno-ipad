@@ -4,10 +4,13 @@
 #import "DUNTimelineHeader.h"
 #import "DUNSession.h"
 
+#import "DUNAPI.h"
+
 #import "DUNEvent.h"
 #import "DUNTopic.h"
 #import "DUNPoll.h"
 
+#import <SDCAlertView/SDCAlertView.h>
 
 @interface DUNEventDashboardVC ()<UITableViewDelegate, UITableViewDataSource,
 UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
@@ -39,10 +42,6 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
   
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-}
-
 - (void) viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
@@ -54,7 +53,16 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
 
 - (IBAction)closeEvent:(id)sender
 {
-  NSLog(@"fire close event.. ");
+  [[DUNAPI sharedInstance] closeEvent:_session.activeEvent success:^(DUNEvent *eventClosed) {
+    
+    [_session closeEvent];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+  } error:^(NSError *error) {
+    SDCAlertView *alertView = [[SDCAlertView alloc] initWithTitle:@"ERRO" message:@"Username ou senha inválidos." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
+  }];
 }
 
 #pragma mark -

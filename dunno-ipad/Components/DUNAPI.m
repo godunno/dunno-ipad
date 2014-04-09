@@ -70,6 +70,31 @@ static const NSString *BASE_URL = @"http://localhost:3000/api/v1";
   
 }
 
+- (void) closeEvent:(DUNEvent*)event success:(void(^)(DUNEvent *eventClosed))successBlock error:(void(^)(NSError *error))errorBlock
+{
+  NSParameterAssert(event!=nil);
+  NSParameterAssert(event.uuid!=nil);
+  
+  NSString *endpoint = [NSString stringWithFormat:@"%@/teacher/events/%@/close",BASE_URL,event.uuid];
+  
+  AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+  [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
+  
+  [manager PATCH:endpoint parameters:[self mandatoryParams] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    
+    NSError *error = nil;
+    DUNEvent *eventClosed = [MTLJSONAdapter modelOfClass:DUNEvent.class fromJSONDictionary:responseObject error:&error];
+    
+    if(!error)
+      successBlock(eventClosed);
+    else
+      errorBlock(error);
+    
+  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    errorBlock(error);
+  }];
+}
+
 #pragma mark -
 #pragma mark - Private Methods
 

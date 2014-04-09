@@ -31,4 +31,11 @@ NSString * const DUNTimelineChangesNotificationName =  @"vc.dunno.notification.t
   [center postNotificationName:DUNTimelineChangesNotificationName object:self.activeEvent];
 }
 
+
+- (void) closeEvent
+{
+  _activeEvent.status = DUNEventClosed;
+  [_currentTeacher updateEvent:[_activeEvent copy]];
+  _activeEvent = nil;
+}
 @end

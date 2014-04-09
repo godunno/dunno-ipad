@@ -9,4 +9,8 @@
 
 - (void) openEvent:(DUNEvent*)event success:(void(^)(DUNEvent *eventOpened))successBlock error:(void(^)(NSError *error))errorBlock;
 
+- (void) closeEvent:(DUNEvent*)event success:(void(^)(DUNEvent *eventClosed))successBlock error:(void(^)(NSError *error))errorBlock;
+
+
+
 @end

@@ -35,6 +35,7 @@
   [super viewDidAppear:animated];
   
   NSParameterAssert(_session.currentTeacher!=nil);
+  [_eventsCollectionView reloadData];
 }
 
 #pragma mark -
