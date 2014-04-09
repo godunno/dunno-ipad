@@ -55,7 +55,7 @@ UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFl
 {
   [[DUNAPI sharedInstance] closeEvent:_session.activeEvent success:^(DUNEvent *eventClosed) {
     
-    [_session closeEvent];
+    [_session closeCurrentEvent];
     
     [self.navigationController popViewControllerAnimated:YES];
     

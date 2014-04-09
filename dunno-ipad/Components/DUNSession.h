@@ -15,6 +15,6 @@ extern NSString * const DUNTimelineChangesNotificationName;
 
 - (void) fireTimelineChangeNotification;
 
-- (void) closeEvent;
+- (void) closeCurrentEvent;
 
 @end

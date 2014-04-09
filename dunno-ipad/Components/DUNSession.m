@@ -32,7 +32,7 @@ NSString * const DUNTimelineChangesNotificationName =  @"vc.dunno.notification.t
 }
 
 
-- (void) closeEvent
+- (void) closeCurrentEvent
 {
   _activeEvent.status = DUNEventClosed;
   [_currentTeacher updateEvent:[_activeEvent copy]];
