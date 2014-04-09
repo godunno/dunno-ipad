@@ -1,5 +1,6 @@
 #import "DUNTeacher.h"
 #import "DUNEvent.h"
+#import "DUNPoll.h"
 
 extern NSString * const DUNTimelineChangesNotificationName;
 
@@ -16,5 +17,7 @@ extern NSString * const DUNTimelineChangesNotificationName;
 - (void) fireTimelineChangeNotification;
 
 - (void) closeCurrentEvent;
+
+- (void) releasePollAtCurrentEvent:(DUNPoll *)poll;
 
 @end

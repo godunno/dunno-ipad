@@ -9,7 +9,7 @@
 - (void)layoutSubviews
 {
   [super layoutSubviews];
-  // customize
+  self.backgroundColor = [UIColor greenColor];
 }
 
 @end
