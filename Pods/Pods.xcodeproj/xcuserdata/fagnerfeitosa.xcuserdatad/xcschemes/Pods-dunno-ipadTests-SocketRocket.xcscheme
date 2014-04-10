@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8237138E0C504B3FAF6B5405"
+               BlueprintIdentifier = "ADAE7D32E47D412490AFE6F7"
                BuildableName = "libPods-dunno-ipadTests-SocketRocket.a"
                BlueprintName = "Pods-dunno-ipadTests-SocketRocket"
                ReferencedContainer = "container:Pods.xcodeproj">

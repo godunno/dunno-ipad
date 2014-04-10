@@ -1,3 +1,0 @@
-@interface DUNStyle : NSObject
-
-@end

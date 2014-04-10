@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F15BAAA9AE4445689FFF1C8"
+               BlueprintIdentifier = "4757D5F5F3FD468495ACD125"
                BuildableName = "libPods-dunno-ipadTests-SDCAutoLayout.a"
                BlueprintName = "Pods-dunno-ipadTests-SDCAutoLayout"
                ReferencedContainer = "container:Pods.xcodeproj">
