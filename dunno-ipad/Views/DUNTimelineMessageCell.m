@@ -1,18 +1,30 @@
 #import "DUNTimelineMessageCell.h"
+#import "DUNTimelineUserMessage.h"
+
+#import "DUNStyles.h"
+#import "NSDate-Utilities.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
 
 @interface DUNTimelineMessageCell()
-@property (nonatomic, weak) IBOutlet UIImageView *autorProfileImageView;
-@property (nonatomic, weak) IBOutlet UILabel *autorLabel;
-@property (nonatomic, weak) IBOutlet UILabel *sentAtLabel;
-@property (nonatomic, weak) IBOutlet UITextView *messageTextView;
+
 @end
 
 @implementation DUNTimelineMessageCell
 
-- (void)layoutSubviews
+- (void) setMessage:(DUNTimelineUserMessage *)message
 {
-  [super layoutSubviews];
-  // customize
+  _message = message;
+  
+  [_studentProfileImageView setImageWithURL:[NSURL URLWithString:_message.owner.avatarURLString]];
+  _studentNameLabel.text = _message.owner.name;
+  _sentAtLabel.text = [NSString stringWithFormat:@"%d:%d",[_message.sentAt hour],[_message.sentAt minute]];
+  _messageTextView.text = _message.content;
+  
+  _upVoteLabel.text = [NSString stringWithFormat:@"%d", [_message.upVotes integerValue]];
+  _downVoteLabel.text = [NSString stringWithFormat:@"%d", [_message.downVotes integerValue]];
+  
+  [DUNStyles roundView:_studentProfileImageView];
 }
 
 @end

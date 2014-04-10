@@ -1,6 +1,6 @@
 #import "DUNEventTimelineTVC.h"
 #import "DUNTimelineMessageCell.h"
-#import "DUNTimelineHeader.h"
+#import "DUNTimelineHeaderView.h"
 
 #import "DUNTopic.h"
 
@@ -37,29 +37,9 @@
   
   DUNTimelineUserMessage *message = [_session.activeEvent.timeline.messages objectAtIndex:indexPath.row];
   
-  cell.textLabel.text = message.content;
+  [cell setMessage:message];
   
   return cell;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-  DUNTimelineHeader *header = [[NSBundle mainBundle] loadNibNamed:kDUNTimelineHeaderNibName
-                                                            owner:self
-                                                          options:nil][0];
-  
-  if(_session.activeEvent.topics.count == 0){ // start point
-    header.topicsTextView.text = @"Evento sem tópico específico - Tema livre";
-  } else {
-    __block NSString *topicsString = @"Tópicos do evento: \n\n";
-    [_session.activeEvent.topics enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-      DUNTopic *topic =(DUNTopic*)_session.activeEvent.topics[idx];
-      topicsString = [topicsString stringByAppendingString:[@"\u2022 " stringByAppendingString:[topic.title stringByAppendingString:@"\n"]]];
-    }];
-    header.topicsTextView.text = topicsString;
-  }
-  
-  return header;
 }
 
 #pragma mark -

@@ -19,10 +19,17 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - dunno-shared (1.4.5):
+    - AFNetworking
+    - HexColors
     - ISO8601DateFormatter
     - libPusher
     - Mantle
+    - NSDate+Calendar
+    - Reachability
+    - SDWebImage
   - Expecta (0.3.0)
+  - FlatUIKit (1.3)
+  - HexColors (2.2.1)
   - ISO8601DateFormatter (0.7)
   - libPusher (1.5):
     - libPusher/Core
@@ -31,10 +38,13 @@ PODS:
   - Mantle (1.4.1):
     - Mantle/extobjc
   - Mantle/extobjc (1.4.1)
+  - MBProgressHUD (0.8)
+  - NSDate+Calendar (0.0.4)
   - OCHamcrest (3.0.1)
   - OCMockito (1.1.0):
     - OCHamcrest (~> 3.0)
   - RBBAnimation (0.3.0)
+  - Reachability (3.1.1)
   - SDCAlertView (1.1):
     - RBBAnimation (~> 0.3)
     - SDCAutoLayout (~> 2.0)
@@ -46,12 +56,12 @@ PODS:
   - Specta (0.2.1)
 
 DEPENDENCIES:
-  - AFNetworking
   - dunno-shared (from `../dunno-shared`)
   - Expecta
+  - FlatUIKit
+  - MBProgressHUD
   - OCMockito
   - SDCAlertView
-  - SDWebImage
   - Specta
 
 EXTERNAL SOURCES:
@@ -60,14 +70,19 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
-  dunno-shared: d48257bb3538057e5dac84936cfd0a19e86d9ba9
+  dunno-shared: 19127ed39c182674f04f2165c9e186a24828ac01
   Expecta: 322f1dc42610106a5ba9871b4924cf1635d80833
+  FlatUIKit: 3b32b52bb3c266477709cfe4812ab2c877ae942b
+  HexColors: 99211502e17904af7891fc8f687d0e4958a6d66e
   ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
   libPusher: 295f281f1003aa678382a387e3043c298f270e4d
   Mantle: 0714cdb2b8559d9e6c2410d6a8529e3307bff189
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  NSDate+Calendar: db9a1a4a03dc1536517c7e41ceb97813f0e0ee76
   OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
   OCMockito: 317fa0cf75c9b0d73d2be335789c556537be7fd2
   RBBAnimation: e7f31ed62f760f3caf120b5d943267bd9a8e1f64
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
   SDCAlertView: 0d23556dc7d6d7f53913ca35debd2e27ef33aa28
   SDCAutoLayout: fbb30550a36f244223ea40560549372eccd1c4c7
   SDWebImage: 7eb273e54ca8a2e506ad9bd5e80c35b2a4d7c95e

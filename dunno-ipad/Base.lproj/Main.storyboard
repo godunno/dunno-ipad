@@ -224,71 +224,108 @@
         <scene sceneID="3kO-V8-jm8">
             <objects>
                 <tableViewController id="GT4-63-8BM" customClass="DUNEventTimelineTVC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="94O-sD-CZs">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="192" sectionHeaderHeight="22" sectionFooterHeight="22" id="94O-sD-CZs">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="703"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="x4Y-Dx-DN5" customClass="DUNTimelineHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="83"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Gy-eL-4RP">
+                                    <rect key="frame" x="20" y="15" width="260" height="53"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.51713429710000003" green="0.78527027370000002" blue="0.55560566649999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <outlet property="topicsTextView" destination="8Gy-eL-4RP" id="d6D-9b-hV9"/>
+                            </connections>
+                        </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="DUNTimelineMessageCellRestorationId" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DUNTimelineMessageCellRestorationId" rowHeight="96" id="A50-w8-HY2" customClass="DUNTimelineMessageCell">
-                                <rect key="frame" x="0.0" y="22" width="300" height="96"/>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="vc.dunno.ipad.event.dashboard.timeline.messagecell" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="vc.dunno.ipad.event.dashboard.timeline.messagecell" rowHeight="192" id="A50-w8-HY2" customClass="DUNTimelineMessageCell">
+                                <rect key="frame" x="0.0" y="105" width="300" height="192"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A50-w8-HY2" id="68a-aA-Ard">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="95"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="191"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQu-Ds-9U5">
-                                            <rect key="frame" x="75" y="10" width="178" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQu-Ds-9U5">
+                                            <rect key="frame" x="75" y="10" width="156" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-m2-adv">
-                                            <rect key="frame" x="261" y="10" width="48" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-m2-adv">
+                                            <rect key="frame" x="241" y="10" width="48" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="aa0-Hl-eMv"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56z-Ku-9Gy">
-                                            <rect key="frame" x="72" y="39" width="238" height="48"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56z-Ku-9Gy">
+                                            <rect key="frame" x="75" y="39" width="214" height="69"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dig-vE-F0k">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dig-vE-F0k">
                                             <rect key="frame" x="9" y="17" width="55" height="55"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="55" id="NUe-Sf-B5L"/>
-                                            </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzb-rm-wbm">
+                                            <rect key="frame" x="9" y="128" width="52" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="21"/>
+                                            <state key="normal" title="up">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXC-1x-aAk">
+                                            <rect key="frame" x="237" y="128" width="52" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="21"/>
+                                            <state key="normal" title="down">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0J-qV-4A7">
+                                            <rect key="frame" x="69" y="128" width="42" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
+                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZX-XO-kdz">
+                                            <rect key="frame" x="187" y="128" width="42" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="24"/>
+                                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="iQu-Ds-9U5" firstAttribute="leading" secondItem="Dig-vE-F0k" secondAttribute="trailing" constant="11" id="3hC-0p-zIs"/>
-                                        <constraint firstItem="56z-Ku-9Gy" firstAttribute="leading" secondItem="Dig-vE-F0k" secondAttribute="trailing" constant="8" symbolic="YES" id="5xe-89-Kfh"/>
-                                        <constraint firstItem="56z-Ku-9Gy" firstAttribute="top" secondItem="iQu-Ds-9U5" secondAttribute="bottom" constant="8" symbolic="YES" id="BkT-Z0-7HZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="vbm-m2-adv" secondAttribute="trailing" constant="79" id="C8D-oR-3nb"/>
-                                        <constraint firstItem="iQu-Ds-9U5" firstAttribute="top" secondItem="68a-aA-Ard" secondAttribute="top" constant="10" id="Ezf-P2-bKy"/>
-                                        <constraint firstItem="Dig-vE-F0k" firstAttribute="leading" secondItem="68a-aA-Ard" secondAttribute="leading" constant="9" id="Qca-47-gsn"/>
-                                        <constraint firstItem="vbm-m2-adv" firstAttribute="leading" secondItem="iQu-Ds-9U5" secondAttribute="trailing" constant="8" symbolic="YES" id="Wum-07-9s5"/>
-                                        <constraint firstItem="iQu-Ds-9U5" firstAttribute="baseline" secondItem="vbm-m2-adv" secondAttribute="baseline" id="YZM-mo-83L"/>
-                                        <constraint firstItem="Dig-vE-F0k" firstAttribute="top" secondItem="68a-aA-Ard" secondAttribute="top" constant="17" id="Zqs-SH-Xgn"/>
-                                        <constraint firstAttribute="trailing" secondItem="56z-Ku-9Gy" secondAttribute="trailing" constant="78" id="eOq-5H-t9A"/>
-                                        <constraint firstAttribute="bottom" secondItem="Dig-vE-F0k" secondAttribute="bottom" constant="23" id="hMM-3T-aTs"/>
-                                        <constraint firstAttribute="bottom" secondItem="56z-Ku-9Gy" secondAttribute="bottom" constant="8" id="uf5-Bo-MEj"/>
-                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="autorLabel" destination="iQu-Ds-9U5" id="Geo-Aa-viS"/>
-                                    <outlet property="autorProfileImageView" destination="Dig-vE-F0k" id="wmF-DQ-4qZ"/>
-                                    <outlet property="messageTextView" destination="56z-Ku-9Gy" id="mkh-xU-gMh"/>
-                                    <outlet property="sentAtLabel" destination="vbm-m2-adv" id="BBG-K4-Sln"/>
+                                    <outlet property="downVoteButton" destination="EXC-1x-aAk" id="Wqr-tj-XX6"/>
+                                    <outlet property="downVoteLabel" destination="dZX-XO-kdz" id="e8D-NL-jdf"/>
+                                    <outlet property="messageTextView" destination="56z-Ku-9Gy" id="WNn-Yl-oT3"/>
+                                    <outlet property="sentAtLabel" destination="vbm-m2-adv" id="pf9-Ty-bSJ"/>
+                                    <outlet property="studentNameLabel" destination="iQu-Ds-9U5" id="CMW-JK-YOs"/>
+                                    <outlet property="studentProfileImageView" destination="Dig-vE-F0k" id="oIe-b2-P3v"/>
+                                    <outlet property="upVoteButton" destination="jzb-rm-wbm" id="VNr-ZG-RaL"/>
+                                    <outlet property="upVoteLabel" destination="c0J-qV-4A7" id="MpX-nh-JFv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

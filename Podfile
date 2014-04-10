@@ -4,8 +4,8 @@ inhibit_all_warnings!
 
 xcodeproj 'dunno-ipad'
 
-pod 'AFNetworking'
-pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'FlatUIKit'
 pod 'SDCAlertView'
 
 pod 'dunno-shared', :path => '../dunno-shared'
