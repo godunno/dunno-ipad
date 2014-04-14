@@ -1,0 +1,3 @@
+@interface DUNEventMediasDashboardCVC : UICollectionViewController
+
+@end

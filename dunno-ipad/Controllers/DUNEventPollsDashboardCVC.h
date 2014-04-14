@@ -1,0 +1,3 @@
+@interface DUNEventPollsDashboardCVC : UICollectionViewController
+
+@end

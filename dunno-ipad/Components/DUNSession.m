@@ -39,7 +39,8 @@ NSString * const DUNTimelineChangesNotificationName =  @"vc.dunno.notification.t
   _activeEvent = nil;
 }
 
-- (void) releasePollAtCurrentEvent:(DUNPoll *)poll;
+
+- (void) releasePollAtCurrentEvent:(DUNPoll *)poll
 {
   poll.status = DUNPollReleased;
   
@@ -48,6 +49,23 @@ NSString * const DUNTimelineChangesNotificationName =  @"vc.dunno.notification.t
     if([p.uuid isEqualToString:poll.uuid])
     {
       [_activeEvent.polls replaceObjectAtIndex:idx withObject:poll];
+      return;
+    }
+  }];
+  
+  //assert false?
+}
+
+
+- (void) releaseMediaAtCurrentEvent:(DUNMedia *)media
+{
+  media.status = DUNMediaReleased;
+  
+  [_activeEvent.medias enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    DUNPoll *p =obj;
+    if([p.uuid isEqualToString:media.uuid])
+    {
+      [_activeEvent.medias replaceObjectAtIndex:idx withObject:media];
       return;
     }
   }];

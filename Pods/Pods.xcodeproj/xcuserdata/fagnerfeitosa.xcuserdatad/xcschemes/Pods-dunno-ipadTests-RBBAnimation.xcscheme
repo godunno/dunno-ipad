@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2DEE3A7D4E234F62841D30EF"
+               BlueprintIdentifier = "123AD7DF0267432288CD9784"
                BuildableName = "libPods-dunno-ipadTests-RBBAnimation.a"
                BlueprintName = "Pods-dunno-ipadTests-RBBAnimation"
                ReferencedContainer = "container:Pods.xcodeproj">

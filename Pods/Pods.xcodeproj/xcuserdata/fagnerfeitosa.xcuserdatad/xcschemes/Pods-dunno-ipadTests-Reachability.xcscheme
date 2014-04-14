@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D99105B623F7478A8170B4A2"
+               BlueprintIdentifier = "0EE75C796C8B46528729862D"
                BuildableName = "libPods-dunno-ipadTests-Reachability.a"
                BlueprintName = "Pods-dunno-ipadTests-Reachability"
                ReferencedContainer = "container:Pods.xcodeproj">

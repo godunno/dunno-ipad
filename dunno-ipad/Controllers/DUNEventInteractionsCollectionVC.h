@@ -1,3 +1,0 @@
-@interface DUNEventInteractionsCollectionVC : UICollectionViewController
-
-@end

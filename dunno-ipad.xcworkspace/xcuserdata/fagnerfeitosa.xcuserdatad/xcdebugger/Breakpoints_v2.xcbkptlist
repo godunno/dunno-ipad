@@ -781,7 +781,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "dunno-ipad/Controllers/DUNEventInteractionsCollectionVC.m"
+            filePath = "dunno-ipad/Controllers/DUNEventPollsDashboardCVC.m"
             timestampString = "418773261.103545"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -797,7 +797,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "dunno-ipad/Controllers/DUNEventInteractionsCollectionVC.m"
+            filePath = "dunno-ipad/Controllers/DUNEventPollsDashboardCVC.m"
             timestampString = "418773261.103545"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -924,11 +924,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dunno-ipad/Components/DUNSession.m"
-            timestampString = "418772626.813426"
+            timestampString = "419198536.795451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-releasePollAtCurrentEvent:"
             landmarkType = "5">
          </BreakpointContent>
@@ -955,7 +955,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "dunno-ipad/Controllers/DUNEventInteractionsCollectionVC.m"
+            filePath = "dunno-ipad/Controllers/DUNEventPollsDashboardCVC.m"
             timestampString = "418772898.502148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -1058,6 +1058,54 @@
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "-setMessage:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../dunno-shared/dunno-shared/Models/DUNEvent.m"
+            timestampString = "419197851.205826"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "+mediasJSONTransformer"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dunno-ipad/Controllers/DUNEventMediasDashboardCVC.m"
+            timestampString = "419197985.403505"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dunno-ipad/Controllers/DUNEventMediasDashboardCVC.m"
+            timestampString = "419198041.532738"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "-collectionView:numberOfItemsInSection:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

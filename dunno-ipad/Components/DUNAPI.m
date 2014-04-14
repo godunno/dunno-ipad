@@ -114,6 +114,25 @@ static const NSString *BASE_URL = @"http://localhost:3000/api/v1";
   }];
 }
 
+- (void) releaseMedia:(DUNMedia*)media success:(void(^)(void))successBlock error:(void(^)(NSError *error))errorBlock
+{
+  NSParameterAssert(media!=nil);
+  NSParameterAssert(media.uuid!=nil);
+  
+  NSString *endpoint = [NSString stringWithFormat:@"%@/teacher/medias/%@/release.json",BASE_URL,media.uuid];
+  
+  AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+  [manager setResponseSerializer:[AFJSONResponseSerializer serializer]];
+  
+  [manager PATCH:endpoint parameters:[self mandatoryParams] success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    
+    successBlock();
+    
+  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    errorBlock(error);
+  }];
+}
+
 #pragma mark -
 #pragma mark - Private Methods
 

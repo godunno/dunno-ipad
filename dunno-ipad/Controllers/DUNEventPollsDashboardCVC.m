@@ -1,4 +1,4 @@
-#import "DUNEventInteractionsCollectionVC.h"
+#import "DUNEventPollsDashboardCVC.h"
 #import "DUNDashboardPollCell.h"
 
 #import "DUNPoll.h"
@@ -8,11 +8,11 @@
 
 #import <SDCAlertView/SDCAlertView.h>
 
-@interface DUNEventInteractionsCollectionVC ()
+@interface DUNEventPollsDashboardCVC ()
 @property (nonatomic, strong) DUNSession *session;
 @end
 
-@implementation DUNEventInteractionsCollectionVC
+@implementation DUNEventPollsDashboardCVC
 
 -(void)viewDidLoad
 {

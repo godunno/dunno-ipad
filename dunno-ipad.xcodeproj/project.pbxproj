@@ -31,11 +31,13 @@
 		C34CA22818EE112A00ABDB89 /* DUNTimelineMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CA22718EE112A00ABDB89 /* DUNTimelineMessageCell.m */; };
 		C34CA27118EE2D8100ABDB89 /* DUNEventDashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CA27018EE2D8100ABDB89 /* DUNEventDashboardVC.m */; };
 		C34CA27418EE316900ABDB89 /* DUNDashboardPollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C34CA27318EE316900ABDB89 /* DUNDashboardPollCell.m */; };
-		C363DA0E18F5E05E00B396E4 /* DUNEventInteractionsCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C363DA0D18F5E05E00B396E4 /* DUNEventInteractionsCollectionVC.m */; };
+		C363DA0E18F5E05E00B396E4 /* DUNEventPollsDashboardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C363DA0D18F5E05E00B396E4 /* DUNEventPollsDashboardCVC.m */; };
 		C363DA1118F5E12B00B396E4 /* DUNEventTimelineTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C363DA1018F5E12B00B396E4 /* DUNEventTimelineTVC.m */; };
 		C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE5D18E37308004C5695 /* DUNSession.m */; };
 		C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6018E373E4004C5695 /* DUNHomeVC.m */; };
 		C3D8DD5F18EF4E2F0019B86C /* DUNTimelineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D8DD5E18EF4E2F0019B86C /* DUNTimelineHeaderView.m */; };
+		C3E110B618FC637400B6347D /* DUNDashboardImageMediaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E110B518FC637400B6347D /* DUNDashboardImageMediaCell.m */; };
+		C3E110B918FC641200B6347D /* DUNEventMediasDashboardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E110B818FC641200B6347D /* DUNEventMediasDashboardCVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +86,8 @@
 		C34CA27018EE2D8100ABDB89 /* DUNEventDashboardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventDashboardVC.m; sourceTree = "<group>"; };
 		C34CA27218EE316900ABDB89 /* DUNDashboardPollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNDashboardPollCell.h; sourceTree = "<group>"; };
 		C34CA27318EE316900ABDB89 /* DUNDashboardPollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNDashboardPollCell.m; sourceTree = "<group>"; };
-		C363DA0C18F5E05E00B396E4 /* DUNEventInteractionsCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEventInteractionsCollectionVC.h; sourceTree = "<group>"; };
-		C363DA0D18F5E05E00B396E4 /* DUNEventInteractionsCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventInteractionsCollectionVC.m; sourceTree = "<group>"; };
+		C363DA0C18F5E05E00B396E4 /* DUNEventPollsDashboardCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEventPollsDashboardCVC.h; sourceTree = "<group>"; };
+		C363DA0D18F5E05E00B396E4 /* DUNEventPollsDashboardCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventPollsDashboardCVC.m; sourceTree = "<group>"; };
 		C363DA0F18F5E12B00B396E4 /* DUNEventTimelineTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEventTimelineTVC.h; sourceTree = "<group>"; };
 		C363DA1018F5E12B00B396E4 /* DUNEventTimelineTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventTimelineTVC.m; sourceTree = "<group>"; };
 		C37ABE5C18E37308004C5695 /* DUNSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNSession.h; sourceTree = "<group>"; };
@@ -94,6 +96,10 @@
 		C37ABE6018E373E4004C5695 /* DUNHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNHomeVC.m; sourceTree = "<group>"; };
 		C3D8DD5D18EF4E2F0019B86C /* DUNTimelineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelineHeaderView.h; sourceTree = "<group>"; };
 		C3D8DD5E18EF4E2F0019B86C /* DUNTimelineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelineHeaderView.m; sourceTree = "<group>"; };
+		C3E110B418FC637400B6347D /* DUNDashboardImageMediaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNDashboardImageMediaCell.h; sourceTree = "<group>"; };
+		C3E110B518FC637400B6347D /* DUNDashboardImageMediaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNDashboardImageMediaCell.m; sourceTree = "<group>"; };
+		C3E110B718FC641200B6347D /* DUNEventMediasDashboardCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEventMediasDashboardCVC.h; sourceTree = "<group>"; };
+		C3E110B818FC641200B6347D /* DUNEventMediasDashboardCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventMediasDashboardCVC.m; sourceTree = "<group>"; };
 		CC8062B1F95E43F0A3C4FA18 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		D62293D0E61746128DF0A048 /* Pods-dunno-ipadTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dunno-ipadTests.xcconfig"; path = "Pods/Pods-dunno-ipadTests.xcconfig"; sourceTree = "<group>"; };
 		EEF4E4D8154F47A6A758D30F /* libPods-dunno-ipadTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dunno-ipadTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,11 +134,10 @@
 		C3075FFB18E06527009B644E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C3E110B318FC62E100B6347D /* Dashboard */,
 				C3D8DD5A18EF4C710019B86C /* Timeline */,
 				C329C68B18ECB31900766B14 /* DUNEventCell.h */,
 				C329C68C18ECB31900766B14 /* DUNEventCell.m */,
-				C34CA27218EE316900ABDB89 /* DUNDashboardPollCell.h */,
-				C34CA27318EE316900ABDB89 /* DUNDashboardPollCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,10 +256,12 @@
 			children = (
 				C34CA26F18EE2D8100ABDB89 /* DUNEventDashboardVC.h */,
 				C34CA27018EE2D8100ABDB89 /* DUNEventDashboardVC.m */,
-				C363DA0C18F5E05E00B396E4 /* DUNEventInteractionsCollectionVC.h */,
-				C363DA0D18F5E05E00B396E4 /* DUNEventInteractionsCollectionVC.m */,
 				C363DA0F18F5E12B00B396E4 /* DUNEventTimelineTVC.h */,
 				C363DA1018F5E12B00B396E4 /* DUNEventTimelineTVC.m */,
+				C363DA0C18F5E05E00B396E4 /* DUNEventPollsDashboardCVC.h */,
+				C363DA0D18F5E05E00B396E4 /* DUNEventPollsDashboardCVC.m */,
+				C3E110B718FC641200B6347D /* DUNEventMediasDashboardCVC.h */,
+				C3E110B818FC641200B6347D /* DUNEventMediasDashboardCVC.m */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -281,6 +288,17 @@
 				C34CA22718EE112A00ABDB89 /* DUNTimelineMessageCell.m */,
 			);
 			name = Timeline;
+			sourceTree = "<group>";
+		};
+		C3E110B318FC62E100B6347D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C34CA27218EE316900ABDB89 /* DUNDashboardPollCell.h */,
+				C34CA27318EE316900ABDB89 /* DUNDashboardPollCell.m */,
+				C3E110B418FC637400B6347D /* DUNDashboardImageMediaCell.h */,
+				C3E110B518FC637400B6347D /* DUNDashboardImageMediaCell.m */,
+			);
+			name = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,15 +469,17 @@
 				C307600418E06548009B644E /* DUNLoginVC.m in Sources */,
 				C348F5EE18D7527C00D61751 /* DUNAppDelegate.m in Sources */,
 				C34CA22818EE112A00ABDB89 /* DUNTimelineMessageCell.m in Sources */,
+				C3E110B918FC641200B6347D /* DUNEventMediasDashboardCVC.m in Sources */,
 				C363DA1118F5E12B00B396E4 /* DUNEventTimelineTVC.m in Sources */,
 				C34CA27418EE316900ABDB89 /* DUNDashboardPollCell.m in Sources */,
 				C34CA27118EE2D8100ABDB89 /* DUNEventDashboardVC.m in Sources */,
 				C329C68D18ECB31900766B14 /* DUNEventCell.m in Sources */,
 				C37ABE5E18E37308004C5695 /* DUNSession.m in Sources */,
 				C329C69418ECDCDB00766B14 /* DUNOpenEvent.m in Sources */,
+				C3E110B618FC637400B6347D /* DUNDashboardImageMediaCell.m in Sources */,
 				C32ED00D18EB086D005F1822 /* DUNAPI.m in Sources */,
 				C329C68718EC593100766B14 /* DUNStyles.m in Sources */,
-				C363DA0E18F5E05E00B396E4 /* DUNEventInteractionsCollectionVC.m in Sources */,
+				C363DA0E18F5E05E00B396E4 /* DUNEventPollsDashboardCVC.m in Sources */,
 				C348F5EA18D7527C00D61751 /* main.m in Sources */,
 				C3D8DD5F18EF4E2F0019B86C /* DUNTimelineHeaderView.m in Sources */,
 				C37ABE6118E373E4004C5695 /* DUNHomeVC.m in Sources */,
