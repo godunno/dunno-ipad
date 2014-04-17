@@ -3,7 +3,8 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-static const NSString *BASE_URL = @"http://localhost:3000/api/v1";
+//static const NSString *BASE_URL = @"http://localhost:3000/api/v1";
+static const NSString *BASE_URL = @"http://dunno.ngrok.com/api/v1";
 
 @implementation DUNAPI
 
