@@ -60,7 +60,7 @@
   //TODO show error on modal dialog?
 #endif
   
-  DUNPusher *pusher = [DUNPusher sharedInstance].connect;
+  DUNPusher *pusher = [DUNPusher sharedInstance];
   
   [pusher subscribeToChannelNamed:_event.channelName withEventNamed:_event.studentMessageEvent handleWithBlock:^(NSDictionary *jsonDictionary) {
     
